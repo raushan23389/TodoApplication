@@ -1,0 +1,19 @@
+<div>
+Welcome {{name}}.
+
+Welcome to our Awesome app.
+</div>
+
+<div>
+You can manage your todos <a routerLink="/todos">here</a>
+</div>
+
+<div class = "container">
+    click here to get customized welcome message
+    <button (click)="getWelcomeMessage()" class = "btn btn-success">Get Welcome Message</button>
+</div>
+
+<div class = "container">
+    <h2>Your Customized welcome message</h2>
+    {{message}}
+</div>
